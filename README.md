@@ -2,5 +2,10 @@ https://www.youtube.com/watch?fbclid=IwAR1hu9arZ6ly_IEKuOoTxGDl2WXgtXcHJSU5vsxXV
 
 # Barista cash register
 
-### Technologies
+## Technologies
 
+- React
+- Redux / Redux Toolkit
+- TypeScript
+- Material-UI
+- Node.js 
