@@ -1,4 +1,4 @@
-import { Product } from "../../Interfaces/todoInteface"
+import { Product } from "../../models/productsModels"
 
 export interface BaristaProps {
     onDelete: Function,

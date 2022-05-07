@@ -33,6 +33,7 @@ export const FooterNavBtn: React.FC<FooterProps> = ({ onClick, navigate, title }
     const navigateHandler = () => {
         onClick(navigate)
     }
+
     return (
         <Grid item xs={2} textAlign="center">
             <Button variant='contained' color='warning' /*endIcon={<RestaurantMenuIcon />}*/ onClick={navigateHandler}>{title}</Button>

@@ -9,7 +9,7 @@ import { RemoveFromModal } from '../components/Buttons/IconDeleteButtons';
 
 import { List, Typography, Grid, Divider, Modal, Box, ListItem, ListItemText, } from '@mui/material'
 
-import { Ids, orderedObj } from '../Interfaces/todoInteface';
+import { Ids, orderedObj } from '../models/productsModels';
 
 
 const style = {

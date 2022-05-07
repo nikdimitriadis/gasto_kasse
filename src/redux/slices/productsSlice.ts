@@ -1,6 +1,6 @@
 import { createSlice,PayloadAction,createAsyncThunk } from "@reduxjs/toolkit";
 import type { RootState } from "../../app/store";
-import { Category, MainData } from "../../Interfaces/todoInteface";
+import { Category, MainData } from "../../models/productsModels";
 
 const initialState: MainData = {
     fetched: false,

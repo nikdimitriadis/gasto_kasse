@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useNavigate } from 'react-router'
 
 import { FooterNavBtn } from './Buttons/IconDeleteButtons';
@@ -10,34 +10,37 @@ import { Grid } from '@mui/material'
 // import ManageHistoryIcon from '@mui/icons-material/ManageHistory';
 // import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
 
-const footerBtnData = [
-    {
-        navigate: "/",
-        title: 'Menu'
-    },
-    {
-        navigate: "/history",
-        title: 'History'
-    },
-    {
-        navigate: "/admin",
-        title: 'Admin Log'
-    },
-    {
-        navigate: "/employe",
-        title: 'Employe Log'
-    },
-    {
-        navigate: "/barista",
-        title: 'Barista'
-    },
-]
 
-export default function Footer() {
+
+const Footer = () => {
     const navigate = useNavigate();
     const historyHandler = (direction: string) => {
         navigate(direction)
     }
+    const footerBtnData = useMemo(() => {
+        return [
+            {
+                navigate: "/",
+                title: 'Menu'
+            },
+            {
+                navigate: "/history",
+                title: 'History'
+            },
+            {
+                navigate: "/admin",
+                title: 'Admin Log'
+            },
+            {
+                navigate: "/employe",
+                title: 'Employe Log'
+            },
+            {
+                navigate: "/barista",
+                title: 'Barista'
+            },
+        ]
+    }, [])
     return (
         <Grid container spacing={2} justifyContent="center" alignItems="center" >
             {footerBtnData.map(btn => (
@@ -46,3 +49,5 @@ export default function Footer() {
         </Grid>
     )
 }
+
+export default Footer;

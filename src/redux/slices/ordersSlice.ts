@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction,/*createAsyncThunk*/ } from '@reduxjs/toolkit';
 import type { RootState } from '../../app/store';
 
-import {initialStateOrders,orderedObj,Product,  QtyProduct } from '../../Interfaces/todoInteface';
+import {initialStateOrders,orderedObj,Product,  QtyProduct } from '../../models/productsModels';
 
 // test asThunk
-
+import { socket } from '../../App';
 
 const initialState: initialStateOrders = {
     orders: {
@@ -69,6 +69,7 @@ export const ordersSlice = createSlice({
            state.orders.date = new Date().toDateString();
            state.historyOrders = [...state.historyOrders, {...state.orders}]
            state.barista.activeOrders[id] = {orderState: "uknown", products: [...state.orders.orders]} 
+            socket.emit("baristaOrder", state.barista.activeOrders )
            state.orders.date = "";
            state.orders.time = "";
            state.orders.id = "";

@@ -7,7 +7,7 @@ import { BaristaDeleteButton } from '../components/Buttons/IconDeleteButtons';
 import { Grid, Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import { socket } from '../App';
+// import { socket } from '../App';
 
 export default function Barista() {
     const dispatch = useAppDispatch()
@@ -18,9 +18,11 @@ export default function Barista() {
         console.log(item, productId)
     }
 
-    socket.on('baristaOrder', (data: any) => {
-        console.log(data);
-    })
+    // socket.on('baristaOrder', (data: any) => {
+    //     console.log(data);
+    // })
+
+    // socket.emit("baristaOrder", orders)
 
     return (
         <>

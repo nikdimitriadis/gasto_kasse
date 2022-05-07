@@ -1,11 +1,3 @@
-
-// to dlm MPOREI na ginei gia login kai logout
-export interface DLM {
-    checked: boolean
-}
-
-// gastro menu from backend
-
 export interface Product {
     id: string,
     productName: string,

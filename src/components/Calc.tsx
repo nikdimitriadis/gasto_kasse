@@ -7,6 +7,8 @@ import { Divider, Grid, Typography, Button } from '@mui/material'
 import BackspaceIcon from '@mui/icons-material/Backspace';
 import { NumberCalcButton } from './Buttons/IconDeleteButtons'
 
+// import { socket } from '../App'
+
 const buttonStyle = { width: "100%", maxWidth: "245px", padding: 1.5 }
 
 export default function Calc() {
@@ -17,6 +19,7 @@ export default function Calc() {
     })
     const calc = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "."]
     const busket = useAppSelector(state => state.orders.orders.totalOrderedPrice)
+    // const orders = useAppSelector(state => state.orders.barista.activeOrders)
     // const history = useAppSelector(state => state.orders.historyOrders)
     const dispatch = useAppDispatch()
 
@@ -31,6 +34,8 @@ export default function Calc() {
             setDif({ changed: true, value: result })
             dispatch(addToHistory())
             setTest01("0")
+            // socket.emit("baristaOrder", orders)
+
         }
 
 

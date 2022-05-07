@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Typography, Button } from '@mui/material'
-import { orderedObj } from '../../Interfaces/todoInteface'
+import { orderedObj } from '../../models/productsModels'
 
 const BarComp: React.FC<{ order: orderedObj, onClick: Function }> = ({ onClick, order }) => {
     const showProductsHandler = () => {

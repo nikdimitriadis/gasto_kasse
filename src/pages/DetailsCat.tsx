@@ -7,7 +7,7 @@ import { DetailsCatBtn } from "../components/Buttons/IconDeleteButtons";
 
 
 import { Grid } from "@mui/material";
-import { Product } from '../Interfaces/todoInteface'
+import { Product } from '../models/productsModels'
 
 
 
