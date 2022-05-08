@@ -15,5 +15,5 @@ To operate gastronomy stores with less delays for the customers.
 
 **The system consists of two touch screens.** 
 1. The first is the POS cash register where the cashier receives the orders. 
-2. The second is the  barista who executes the orders.
+2. The second is the barista who executes the orders.
 
