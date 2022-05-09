@@ -1,6 +1,8 @@
-https://www.youtube.com/watch?fbclid=IwAR1hu9arZ6ly_IEKuOoTxGDl2WXgtXcHJSU5vsxXVt09jC4MNjeGrfTi6jM&v=1PiD0BVH4so&feature=youtu.be
-
 # POS cash register
+
+This program is a simulation of POS cash register system.
+The first screen is the POS cash register, where the cashier receives the orders.
+The second screen is is for the barista who executes the orders.
 
 ## Technologies
 
@@ -10,8 +12,6 @@ https://www.youtube.com/watch?fbclid=IwAR1hu9arZ6ly_IEKuOoTxGDl2WXgtXcHJSU5vsxXV
 - Material-UI
 - Node.js 
 
-
-**The system consists of two touch screens.** 
-1. The first is the POS cash register, where the cashier receives the orders. 
-2. The second screen is for the barista who executes the orders.
+**At the link below you can see how the program works**
+https://www.youtube.com/watch?v=1PiD0BVH4so
 
