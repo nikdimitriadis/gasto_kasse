@@ -14,4 +14,4 @@ The second screen is is for the barista who executes the orders.
 
 **At the link below you can see how the program works**
 
-[link](https://www.youtube.com/watch?v=1PiD0BVH4so)
+[link](https://www.youtube.com/watch?v=1PiD0BVH4so){:target="\_blank"}
