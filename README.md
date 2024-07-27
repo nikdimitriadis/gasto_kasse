@@ -12,7 +12,3 @@ The second screen is is for the barista who executes the orders.
 - Material-UI
 - Node.js 
 
-
-**At the link below you can see how the program works**
-
-www.youtube.com/watch?v=1PiD0BVH4so
